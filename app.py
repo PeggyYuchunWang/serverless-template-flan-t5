@@ -30,4 +30,4 @@ def inference(model_inputs:dict) -> dict:
     result = tokenizer.decode(output[0], skip_special_tokens=True)
 
     # Return the results as a dictionary
-    return result
+    return {"output": result}
